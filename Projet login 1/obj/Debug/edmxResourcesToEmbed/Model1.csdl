@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="commerciaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="client">
+    <Key>
+      <PropertyRef Name="Num_C" />
+    </Key>
+    <Property Name="Num_C" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ville" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="commande_vente" Relationship="Self.FK__commande___Clien__4222D4EF" FromRole="client" ToRole="commande_vente" />
+  </EntityType>
+  <EntityType Name="commande_achat">
+    <Key>
+      <PropertyRef Name="Num_C_A" />
+    </Key>
+    <Property Name="Num_C_A" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date_C" Type="DateTime" Precision="3" />
+    <Property Name="Fournisseur" Type="Int16" />
+    <NavigationProperty Name="fournisseur1" Relationship="Self.FK__commande___Fourn__48CFD27E" FromRole="commande_achat" ToRole="fournisseur" />
+    <NavigationProperty Name="ligne_commande_achat" Relationship="Self.FK__ligne_com__Comma__4BAC3F29" FromRole="commande_achat" ToRole="ligne_commande_achat" />
+  </EntityType>
+  <EntityType Name="commande_vente">
+    <Key>
+      <PropertyRef Name="Num_C_V" />
+    </Key>
+    <Property Name="Num_C_V" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date_C" Type="DateTime" Precision="3" />
+    <Property Name="Client" Type="Int16" />
+    <NavigationProperty Name="client1" Relationship="Self.FK__commande___Clien__4222D4EF" FromRole="commande_vente" ToRole="client" />
+    <NavigationProperty Name="ligne_commande_vente" Relationship="Self.FK__ligne_com__Comma__44FF419A" FromRole="commande_vente" ToRole="ligne_commande_vente" />
+  </EntityType>
+  <EntityType Name="fournisseur">
+    <Key>
+      <PropertyRef Name="Num_F" />
+    </Key>
+    <Property Name="Num_F" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Entreprise" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ville" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Adresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="commande_achat" Relationship="Self.FK__commande___Fourn__48CFD27E" FromRole="fournisseur" ToRole="commande_achat" />
+  </EntityType>
+  <EntityType Name="ligne_commande_achat">
+    <Key>
+      <PropertyRef Name="Commande_A" />
+      <PropertyRef Name="Produit" />
+    </Key>
+    <Property Name="Commande_A" Type="Int16" Nullable="false" />
+    <Property Name="Produit" Type="Int16" Nullable="false" />
+    <Property Name="Quantite" Type="Int32" />
+    <NavigationProperty Name="commande_achat" Relationship="Self.FK__ligne_com__Comma__4BAC3F29" FromRole="ligne_commande_achat" ToRole="commande_achat" />
+    <NavigationProperty Name="produit1" Relationship="Self.FK__ligne_com__Produ__4CA06362" FromRole="ligne_commande_achat" ToRole="produit" />
+  </EntityType>
+  <EntityType Name="ligne_commande_vente">
+    <Key>
+      <PropertyRef Name="Commande_V" />
+      <PropertyRef Name="Produit" />
+    </Key>
+    <Property Name="Commande_V" Type="Int16" Nullable="false" />
+    <Property Name="Produit" Type="Int16" Nullable="false" />
+    <Property Name="Quantite" Type="Int32" />
+    <NavigationProperty Name="commande_vente" Relationship="Self.FK__ligne_com__Comma__44FF419A" FromRole="ligne_commande_vente" ToRole="commande_vente" />
+    <NavigationProperty Name="produit1" Relationship="Self.FK__ligne_com__Produ__45F365D3" FromRole="ligne_commande_vente" ToRole="produit" />
+  </EntityType>
+  <EntityType Name="produit">
+    <Key>
+      <PropertyRef Name="Num_P" />
+    </Key>
+    <Property Name="Num_P" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type_P" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Prix" Type="Double" />
+    <Property Name="Image_Nom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Description_P" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Quantite" Type="Int32" />
+    <NavigationProperty Name="ligne_commande_achat" Relationship="Self.FK__ligne_com__Produ__4CA06362" FromRole="produit" ToRole="ligne_commande_achat" />
+    <NavigationProperty Name="ligne_commande_vente" Relationship="Self.FK__ligne_com__Produ__45F365D3" FromRole="produit" ToRole="ligne_commande_vente" />
+    <NavigationProperty Name="type_produit" Relationship="Self.FK__produit__Type_P__3C69FB99" FromRole="produit" ToRole="type_produit" />
+  </EntityType>
+  <EntityType Name="type_produit">
+    <Key>
+      <PropertyRef Name="Libelle" />
+    </Key>
+    <Property Name="Libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="produit" Relationship="Self.FK__produit__Type_P__3C69FB99" FromRole="type_produit" ToRole="produit" />
+  </EntityType>
+  <EntityType Name="utilisateur">
+    <Key>
+      <PropertyRef Name="num_utl" />
+    </Key>
+    <Property Name="num_utl" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Prenom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mot_De_Passe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type_U" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__commande___Clien__4222D4EF">
+    <End Role="client" Type="Self.client" Multiplicity="0..1" />
+    <End Role="commande_vente" Type="Self.commande_vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="client">
+        <PropertyRef Name="Num_C" />
+      </Principal>
+      <Dependent Role="commande_vente">
+        <PropertyRef Name="Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__commande___Fourn__48CFD27E">
+    <End Role="fournisseur" Type="Self.fournisseur" Multiplicity="0..1" />
+    <End Role="commande_achat" Type="Self.commande_achat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="fournisseur">
+        <PropertyRef Name="Num_F" />
+      </Principal>
+      <Dependent Role="commande_achat">
+        <PropertyRef Name="Fournisseur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Comma__4BAC3F29">
+    <End Role="commande_achat" Type="Self.commande_achat" Multiplicity="1" />
+    <End Role="ligne_commande_achat" Type="Self.ligne_commande_achat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande_achat">
+        <PropertyRef Name="Num_C_A" />
+      </Principal>
+      <Dependent Role="ligne_commande_achat">
+        <PropertyRef Name="Commande_A" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Comma__44FF419A">
+    <End Role="commande_vente" Type="Self.commande_vente" Multiplicity="1" />
+    <End Role="ligne_commande_vente" Type="Self.ligne_commande_vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande_vente">
+        <PropertyRef Name="Num_C_V" />
+      </Principal>
+      <Dependent Role="ligne_commande_vente">
+        <PropertyRef Name="Commande_V" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Produ__4CA06362">
+    <End Role="produit" Type="Self.produit" Multiplicity="1" />
+    <End Role="ligne_commande_achat" Type="Self.ligne_commande_achat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="produit">
+        <PropertyRef Name="Num_P" />
+      </Principal>
+      <Dependent Role="ligne_commande_achat">
+        <PropertyRef Name="Produit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Produ__45F365D3">
+    <End Role="produit" Type="Self.produit" Multiplicity="1" />
+    <End Role="ligne_commande_vente" Type="Self.ligne_commande_vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="produit">
+        <PropertyRef Name="Num_P" />
+      </Principal>
+      <Dependent Role="ligne_commande_vente">
+        <PropertyRef Name="Produit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__produit__Type_P__3C69FB99">
+    <End Role="type_produit" Type="Self.type_produit" Multiplicity="0..1" />
+    <End Role="produit" Type="Self.produit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="type_produit">
+        <PropertyRef Name="Libelle" />
+      </Principal>
+      <Dependent Role="produit">
+        <PropertyRef Name="Type_P" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="commerciaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="client" EntityType="Self.client" />
+    <EntitySet Name="commande_achat" EntityType="Self.commande_achat" />
+    <EntitySet Name="commande_vente" EntityType="Self.commande_vente" />
+    <EntitySet Name="fournisseur" EntityType="Self.fournisseur" />
+    <EntitySet Name="ligne_commande_achat" EntityType="Self.ligne_commande_achat" />
+    <EntitySet Name="ligne_commande_vente" EntityType="Self.ligne_commande_vente" />
+    <EntitySet Name="produit" EntityType="Self.produit" />
+    <EntitySet Name="type_produit" EntityType="Self.type_produit" />
+    <EntitySet Name="utilisateur" EntityType="Self.utilisateur" />
+    <AssociationSet Name="FK__commande___Clien__4222D4EF" Association="Self.FK__commande___Clien__4222D4EF">
+      <End Role="client" EntitySet="client" />
+      <End Role="commande_vente" EntitySet="commande_vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__commande___Fourn__48CFD27E" Association="Self.FK__commande___Fourn__48CFD27E">
+      <End Role="fournisseur" EntitySet="fournisseur" />
+      <End Role="commande_achat" EntitySet="commande_achat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Comma__4BAC3F29" Association="Self.FK__ligne_com__Comma__4BAC3F29">
+      <End Role="commande_achat" EntitySet="commande_achat" />
+      <End Role="ligne_commande_achat" EntitySet="ligne_commande_achat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Comma__44FF419A" Association="Self.FK__ligne_com__Comma__44FF419A">
+      <End Role="commande_vente" EntitySet="commande_vente" />
+      <End Role="ligne_commande_vente" EntitySet="ligne_commande_vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Produ__4CA06362" Association="Self.FK__ligne_com__Produ__4CA06362">
+      <End Role="produit" EntitySet="produit" />
+      <End Role="ligne_commande_achat" EntitySet="ligne_commande_achat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Produ__45F365D3" Association="Self.FK__ligne_com__Produ__45F365D3">
+      <End Role="produit" EntitySet="produit" />
+      <End Role="ligne_commande_vente" EntitySet="ligne_commande_vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__produit__Type_P__3C69FB99" Association="Self.FK__produit__Type_P__3C69FB99">
+      <End Role="type_produit" EntitySet="type_produit" />
+      <End Role="produit" EntitySet="produit" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

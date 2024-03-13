@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="commerciaModelStoreContainer" CdmEntityContainer="commerciaEntities">
+    <EntitySetMapping Name="client">
+      <EntityTypeMapping TypeName="commerciaModel.client">
+        <MappingFragment StoreEntitySet="client">
+          <ScalarProperty Name="Num_C" ColumnName="Num_C" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Ville" ColumnName="Ville" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="commande_achat">
+      <EntityTypeMapping TypeName="commerciaModel.commande_achat">
+        <MappingFragment StoreEntitySet="commande_achat">
+          <ScalarProperty Name="Num_C_A" ColumnName="Num_C_A" />
+          <ScalarProperty Name="Date_C" ColumnName="Date_C" />
+          <ScalarProperty Name="Fournisseur" ColumnName="Fournisseur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="commande_vente">
+      <EntityTypeMapping TypeName="commerciaModel.commande_vente">
+        <MappingFragment StoreEntitySet="commande_vente">
+          <ScalarProperty Name="Num_C_V" ColumnName="Num_C_V" />
+          <ScalarProperty Name="Date_C" ColumnName="Date_C" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fournisseur">
+      <EntityTypeMapping TypeName="commerciaModel.fournisseur">
+        <MappingFragment StoreEntitySet="fournisseur">
+          <ScalarProperty Name="Num_F" ColumnName="Num_F" />
+          <ScalarProperty Name="Nom_Entreprise" ColumnName="Nom_Entreprise" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Ville" ColumnName="Ville" />
+          <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ligne_commande_achat">
+      <EntityTypeMapping TypeName="commerciaModel.ligne_commande_achat">
+        <MappingFragment StoreEntitySet="ligne_commande_achat">
+          <ScalarProperty Name="Commande_A" ColumnName="Commande_A" />
+          <ScalarProperty Name="Produit" ColumnName="Produit" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ligne_commande_vente">
+      <EntityTypeMapping TypeName="commerciaModel.ligne_commande_vente">
+        <MappingFragment StoreEntitySet="ligne_commande_vente">
+          <ScalarProperty Name="Commande_V" ColumnName="Commande_V" />
+          <ScalarProperty Name="Produit" ColumnName="Produit" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produit">
+      <EntityTypeMapping TypeName="commerciaModel.produit">
+        <MappingFragment StoreEntitySet="produit">
+          <ScalarProperty Name="Num_P" ColumnName="Num_P" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Type_P" ColumnName="Type_P" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="Image_Nom" ColumnName="Image_Nom" />
+          <ScalarProperty Name="Description_P" ColumnName="Description_P" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="type_produit">
+      <EntityTypeMapping TypeName="commerciaModel.type_produit">
+        <MappingFragment StoreEntitySet="type_produit">
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utilisateur">
+      <EntityTypeMapping TypeName="commerciaModel.utilisateur">
+        <MappingFragment StoreEntitySet="utilisateur">
+          <ScalarProperty Name="num_utl" ColumnName="num_utl" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mot_De_Passe" ColumnName="Mot_De_Passe" />
+          <ScalarProperty Name="Type_U" ColumnName="Type_U" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

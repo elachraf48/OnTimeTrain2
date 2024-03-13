@@ -1,0 +1,296 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\acceuil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\gestion client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\gestion client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\asces2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\asces2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\ajoute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\ajoute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\ajoute produits a commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\ajoute produits a commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|c:\\users\\achra\\onedrive\\bureau\\prject\\ontimetrain\\projet login 1\\ajoute produits a commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\ajoute produits a commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\ajoute client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\ajoute client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\c.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\verf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\verf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\gestion des fournisseurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\gestion des fournisseurs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\gestion_des_produits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\gestion_des_produits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\nouvelle commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\nouvelle commande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\projet login 1\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3ED2D001-6DF0-4709-9DEB-464AA814AF99}|Projet login 1\\commercia.csproj|solutionrelative:projet login 1\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Acceuil.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Acceuil.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Acceuil.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Acceuil.cs",
+              "RelativeToolTip": "Projet login 1\\Acceuil.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAArwIIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T00:23:22.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Form1.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Form1.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Form1.cs",
+              "RelativeToolTip": "Projet login 1\\Form1.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAADwv7AAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:34:11.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Login.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Login.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Login.cs",
+              "RelativeToolTip": "Projet login 1\\Login.cs",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAEwNsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:31:44.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "gestion client.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\gestion client.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\gestion client.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\gestion client.cs",
+              "RelativeToolTip": "Projet login 1\\gestion client.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswBYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T23:35:39.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Acceuil.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Acceuil.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Acceuil.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Acceuil.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\Acceuil.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T23:38:16.973Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "asces2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\asces2.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\asces2.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\asces2.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\asces2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:26:07.512Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ajoute.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\ajoute.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\ajoute.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\ajoute.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\ajoute.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T23:38:23.65Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\App.config",
+              "RelativeDocumentMoniker": "Projet login 1\\App.config",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\App.config",
+              "RelativeToolTip": "Projet login 1\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-12T23:38:24.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ajoute Produits a commande.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Ajoute Produits a commande.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Ajoute Produits a commande.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Ajoute Produits a commande.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\Ajoute Produits a commande.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T23:38:09.897Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ajoute Produits a commande.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Ajoute Produits a commande.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Ajoute Produits a commande.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Ajoute Produits a commande.cs",
+              "RelativeToolTip": "Projet login 1\\Ajoute Produits a commande.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAiwEkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T23:38:11.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "c.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\c.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\c.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\c.cs",
+              "RelativeToolTip": "Projet login 1\\c.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAACLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:26:21.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ajoute client.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\ajoute client.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\ajoute client.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\ajoute client.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\ajoute client.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:25:46.015Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "verf.cs",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\verf.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\verf.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\verf.cs",
+              "RelativeToolTip": "Projet login 1\\verf.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:26:16.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Gestion des fournisseurs.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Gestion des fournisseurs.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Gestion des fournisseurs.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Gestion des fournisseurs.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\Gestion des fournisseurs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:25:28.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Gestion_des_produits.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Gestion_des_produits.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Gestion_des_produits.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Gestion_des_produits.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\Gestion_des_produits.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:25:26.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Nouvelle commande.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Nouvelle commande.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Nouvelle commande.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Nouvelle commande.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\Nouvelle commande.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:25:20.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Options.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Options.cs",
+              "RelativeDocumentMoniker": "Projet login 1\\Options.cs",
+              "ToolTip": "C:\\Users\\achra\\OneDrive\\Bureau\\prject\\OnTimeTrain\\Projet login 1\\Options.cs [Design]",
+              "RelativeToolTip": "Projet login 1\\Options.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:25:14.103Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

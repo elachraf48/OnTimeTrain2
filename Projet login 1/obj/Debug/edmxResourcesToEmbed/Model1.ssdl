@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="commerciaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="client">
+    <Key>
+      <PropertyRef Name="Num_C" />
+    </Key>
+    <Property Name="Num_C" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="varchar" MaxLength="50" />
+    <Property Name="Prenom" Type="varchar" MaxLength="50" />
+    <Property Name="Telephone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Ville" Type="varchar" MaxLength="20" />
+    <Property Name="Adresse" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="commande_achat">
+    <Key>
+      <PropertyRef Name="Num_C_A" />
+    </Key>
+    <Property Name="Num_C_A" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date_C" Type="datetime" />
+    <Property Name="Fournisseur" Type="smallint" />
+  </EntityType>
+  <EntityType Name="commande_vente">
+    <Key>
+      <PropertyRef Name="Num_C_V" />
+    </Key>
+    <Property Name="Num_C_V" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date_C" Type="datetime" />
+    <Property Name="Client" Type="smallint" />
+  </EntityType>
+  <EntityType Name="fournisseur">
+    <Key>
+      <PropertyRef Name="Num_F" />
+    </Key>
+    <Property Name="Num_F" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom_Entreprise" Type="varchar" MaxLength="50" />
+    <Property Name="Telephone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Ville" Type="varchar" MaxLength="20" />
+    <Property Name="Adresse" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ligne_commande_achat">
+    <Key>
+      <PropertyRef Name="Commande_A" />
+      <PropertyRef Name="Produit" />
+    </Key>
+    <Property Name="Commande_A" Type="smallint" Nullable="false" />
+    <Property Name="Produit" Type="smallint" Nullable="false" />
+    <Property Name="Quantite" Type="int" />
+  </EntityType>
+  <EntityType Name="ligne_commande_vente">
+    <Key>
+      <PropertyRef Name="Commande_V" />
+      <PropertyRef Name="Produit" />
+    </Key>
+    <Property Name="Commande_V" Type="smallint" Nullable="false" />
+    <Property Name="Produit" Type="smallint" Nullable="false" />
+    <Property Name="Quantite" Type="int" />
+  </EntityType>
+  <EntityType Name="produit">
+    <Key>
+      <PropertyRef Name="Num_P" />
+    </Key>
+    <Property Name="Num_P" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" MaxLength="50" />
+    <Property Name="Type_P" Type="varchar" MaxLength="50" />
+    <Property Name="Prix" Type="float" />
+    <Property Name="Image_Nom" Type="varchar" MaxLength="20" />
+    <Property Name="Description_P" Type="varchar(max)" />
+    <Property Name="Quantite" Type="int" />
+  </EntityType>
+  <EntityType Name="type_produit">
+    <Key>
+      <PropertyRef Name="Libelle" />
+    </Key>
+    <Property Name="Libelle" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="utilisateur">
+    <Key>
+      <PropertyRef Name="num_utl" />
+    </Key>
+    <Property Name="num_utl" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="varchar" MaxLength="50" />
+    <Property Name="Prenom" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Mot_De_Passe" Type="varchar" MaxLength="50" />
+    <Property Name="Type_U" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__commande___Clien__4222D4EF">
+    <End Role="client" Type="Self.client" Multiplicity="0..1" />
+    <End Role="commande_vente" Type="Self.commande_vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="client">
+        <PropertyRef Name="Num_C" />
+      </Principal>
+      <Dependent Role="commande_vente">
+        <PropertyRef Name="Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__commande___Fourn__48CFD27E">
+    <End Role="fournisseur" Type="Self.fournisseur" Multiplicity="0..1" />
+    <End Role="commande_achat" Type="Self.commande_achat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="fournisseur">
+        <PropertyRef Name="Num_F" />
+      </Principal>
+      <Dependent Role="commande_achat">
+        <PropertyRef Name="Fournisseur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Comma__44FF419A">
+    <End Role="commande_vente" Type="Self.commande_vente" Multiplicity="1" />
+    <End Role="ligne_commande_vente" Type="Self.ligne_commande_vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande_vente">
+        <PropertyRef Name="Num_C_V" />
+      </Principal>
+      <Dependent Role="ligne_commande_vente">
+        <PropertyRef Name="Commande_V" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Comma__4BAC3F29">
+    <End Role="commande_achat" Type="Self.commande_achat" Multiplicity="1" />
+    <End Role="ligne_commande_achat" Type="Self.ligne_commande_achat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="commande_achat">
+        <PropertyRef Name="Num_C_A" />
+      </Principal>
+      <Dependent Role="ligne_commande_achat">
+        <PropertyRef Name="Commande_A" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Produ__45F365D3">
+    <End Role="produit" Type="Self.produit" Multiplicity="1" />
+    <End Role="ligne_commande_vente" Type="Self.ligne_commande_vente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="produit">
+        <PropertyRef Name="Num_P" />
+      </Principal>
+      <Dependent Role="ligne_commande_vente">
+        <PropertyRef Name="Produit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ligne_com__Produ__4CA06362">
+    <End Role="produit" Type="Self.produit" Multiplicity="1" />
+    <End Role="ligne_commande_achat" Type="Self.ligne_commande_achat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="produit">
+        <PropertyRef Name="Num_P" />
+      </Principal>
+      <Dependent Role="ligne_commande_achat">
+        <PropertyRef Name="Produit" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__produit__Type_P__3C69FB99">
+    <End Role="type_produit" Type="Self.type_produit" Multiplicity="0..1" />
+    <End Role="produit" Type="Self.produit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="type_produit">
+        <PropertyRef Name="Libelle" />
+      </Principal>
+      <Dependent Role="produit">
+        <PropertyRef Name="Type_P" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="commerciaModelStoreContainer">
+    <EntitySet Name="client" EntityType="Self.client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="commande_achat" EntityType="Self.commande_achat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="commande_vente" EntityType="Self.commande_vente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="fournisseur" EntityType="Self.fournisseur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ligne_commande_achat" EntityType="Self.ligne_commande_achat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ligne_commande_vente" EntityType="Self.ligne_commande_vente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="produit" EntityType="Self.produit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="type_produit" EntityType="Self.type_produit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="utilisateur" EntityType="Self.utilisateur" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__commande___Clien__4222D4EF" Association="Self.FK__commande___Clien__4222D4EF">
+      <End Role="client" EntitySet="client" />
+      <End Role="commande_vente" EntitySet="commande_vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__commande___Fourn__48CFD27E" Association="Self.FK__commande___Fourn__48CFD27E">
+      <End Role="fournisseur" EntitySet="fournisseur" />
+      <End Role="commande_achat" EntitySet="commande_achat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Comma__44FF419A" Association="Self.FK__ligne_com__Comma__44FF419A">
+      <End Role="commande_vente" EntitySet="commande_vente" />
+      <End Role="ligne_commande_vente" EntitySet="ligne_commande_vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Comma__4BAC3F29" Association="Self.FK__ligne_com__Comma__4BAC3F29">
+      <End Role="commande_achat" EntitySet="commande_achat" />
+      <End Role="ligne_commande_achat" EntitySet="ligne_commande_achat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Produ__45F365D3" Association="Self.FK__ligne_com__Produ__45F365D3">
+      <End Role="produit" EntitySet="produit" />
+      <End Role="ligne_commande_vente" EntitySet="ligne_commande_vente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ligne_com__Produ__4CA06362" Association="Self.FK__ligne_com__Produ__4CA06362">
+      <End Role="produit" EntitySet="produit" />
+      <End Role="ligne_commande_achat" EntitySet="ligne_commande_achat" />
+    </AssociationSet>
+    <AssociationSet Name="FK__produit__Type_P__3C69FB99" Association="Self.FK__produit__Type_P__3C69FB99">
+      <End Role="type_produit" EntitySet="type_produit" />
+      <End Role="produit" EntitySet="produit" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="490f03bb60614f9f99327dc2d93a49ef" Name="Diagram1">
+        <EntityTypeShape EntityType="commerciaModel.client" Width="1.5" PointX="12.125" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.commande_achat" Width="1.5" PointX="9.375" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.commande_vente" Width="2.625" PointX="9.125" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.fournisseur" Width="1.5" PointX="5.125" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.ligne_commande_achat" Width="2" PointX="5.625" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.ligne_commande_vente" Width="2.625" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.produit" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.type_produit" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="commerciaModel.utilisateur" Width="1.5" PointX="13.5" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="commerciaModel.FK__commande___Clien__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="commerciaModel.FK__commande___Fourn__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="commerciaModel.FK__ligne_com__Comma__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="commerciaModel.FK__ligne_com__Comma__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="commerciaModel.FK__ligne_com__Produ__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="commerciaModel.FK__ligne_com__Produ__45F365D3" ManuallyRouted="true" >
+          <ConnectorPoint PointX="4.5" PointY="3.7097292751736108" />
+          <ConnectorPoint PointX="4.7990625" PointY="3.7097292751736108" />
+          <ConnectorPoint PointX="4.7990625" PointY="3.7006233723958335" />
+          <ConnectorPoint PointX="5.40625" PointY="3.7006233723958335" />
+          <ConnectorPoint PointX="5.40625" PointY="2.7302864583333326" />
+        </AssociationConnector>
+        <AssociationConnector Association="commerciaModel.FK__produit__Type_P__3C69FB99" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
